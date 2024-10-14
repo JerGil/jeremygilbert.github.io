@@ -1,0 +1,29 @@
+---
+title: "My Presentation"
+author: "Jérémy Gilbert"
+police: "Times New Roman 12 pt"
+format:
+    pdf: 
+        toc: true
+        number-sections: true
+---    
+
+# Mon travail
+
+Voici mon travail sur les bonbons
+
+## Les jujubes
+
+bla lba lba 
+
+### Les jujubes surettes
+
+bla blab bla
+
+### Les jujubes pas surettes
+
+bal blab  bla bla
+
+## Les jujubes pas surettes
+
+Je les aimes pas

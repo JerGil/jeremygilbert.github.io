@@ -1,0 +1,61 @@
+---
+title: "My Presentation"
+format:
+  revealjs:
+    incremental: true 
+    theme: night
+    footer: "Jérémy Gilbert" 
+---    
+
+# J'aime les bonbons
+
+- Il y a des jujubes
+    - Il y a des jujubes surettes
+    - Il y a des jujubes pas surettes
+
+- Il y a des bonbons durs
+    - *Mais je les aime pas*
+
+# Parlons des bonbons que j'aime 
+:::: {.panel-tabset}
+## Jujubes surettes
+::: {.nonincremental}
+- Sucettes
+- Sour patch kids
+- Pêches
+:::
+## Jujubes pas surettes 
+::: {.nonincremental}
+- Gummy bears
+- Verres de terre
+- Framboises
+:::
+::::
+
+# Voici du code de bonbons
+```{.r code-line-numbers="6-7"}
+library(dplyr)
+library(ggplot2)
+
+df_bonbons <- readRDS("folder/data/candies.rds")
+
+df_bonbons_filtered <- df_bonbons |>
+    filter(sour == TRUE)
+```
+
+## Le positif
+:::: {.columns}
+
+::: {.column width="70%"}
+Surette
+
+- Ça va chercher le fond de la bouche
+- La texture est le fun
+:::
+::: {.column width="30%"}
+Pas surette
+
+- La texture
+- Plus smooth
+:::
+::::
