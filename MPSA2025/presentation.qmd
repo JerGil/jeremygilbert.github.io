@@ -179,10 +179,3 @@ Transcripts of debates from the House of Commons
   Jérémy Gilbert  
   <a href="mailto:jeremy.gilbert.1@ulaval.ca">jeremy.gilbert.1@ulaval.ca</a>
 </div>
-
-##
-<h2 style="text-align: center;">Aggregated Metrics</h2>
-
-<div style="margin-bottom: 50px;"></div>
-
-![](graphs/aggregates.png){fig-align="center"}
