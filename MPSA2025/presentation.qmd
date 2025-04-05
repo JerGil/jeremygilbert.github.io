@@ -7,7 +7,7 @@ author:
 format:
   revealjs: 
     html: true
-    logo: images/logo.png
+    logo: _SharedFolder/images/logo.png
     theme: default
     css: custom.css
 ---
@@ -36,7 +36,7 @@ Analysis by manual coding
 ##
 <h2 style="text-align: center;">Automated Methods of Analysis</h2>
 
-![](graphs/dict_use-case.png){fig-align="center"}
+![](_SharedFolder/graphs/dict_use-case.png){fig-align="center"}
 
 ## Automated Methods of Analysis
 
@@ -158,13 +158,13 @@ Transcripts of debates from the House of Commons
 
 <div style="margin-bottom: 50px;"></div>
 
-![](graphs/F1_score.png){fig-align="center"}
+![](_SharedFolder/graphs/F1_score.png){fig-align="center"}
 
 ## 
 <h2 style="text-align: center;">Sentiment F1 Scores</h2>
 <div style="margin-bottom: 50px;"></div>
 
-![](graphs/F1_score_sentiment.png){fig-align="center"}
+![](_SharedFolder/graphs/F1_score_sentiment.png){fig-align="center"}
 
 ## Preliminary Findings
 <div style="margin-bottom: 50px;"></div>
