@@ -1,0 +1,181 @@
+---
+title: "Automating the Text Annotation Process in Social Sciences"
+author: 
+- "Jérémy Gilbert"
+- "Antoine Lemor"
+- "Shannon Dinan"
+format:
+  revealjs: 
+    html: true
+    logo: images/logo.png
+    theme: default
+    css: custom.css
+---
+
+# Text as object of analysis {background-color="black"} 
+<!-- Talk about how text is usefull for the analysis of political parties and how they occupy the media space -->
+
+## How to analyse text?
+<div style="margin-bottom: 50px;"></div>
+
+Analysis by manual coding 
+
+- Multiple coders process → reliable **but**
+<div style="margin-bottom: 50px;"></div>
+- Costly in terms of time, human and financial resources 
+- Limited volume of annotations
+
+## Automated Methods of Analysis 
+
+<div style="margin-bottom: 50px;"></div>
+
+- Supervised methods when categories are known beforehand
+  - Dictionaries are widely used in political science
+    - Matches words and expressions in a corpus
+
+##
+<h2 style="text-align: center;">Automated Methods of Analysis</h2>
+
+![](graphs/dict_use-case.png){fig-align="center"}
+
+## Automated Methods of Analysis
+
+- Dictionaries are highly sensitive to context
+- They are rigid and need meticulous update 
+  - Might struggle to capture evolving vocabulary on a corpus that spans several years
+- Constant need of validation to have a clearer idea of its validity
+
+## LLMs Arrival 
+
+<!--- LLMs predict the probability of word sequences-->
+- Good at capturing context, can offer nuanced responses
+- Generative AI is capable of effective text annotation
+- New supervised learning methods of annotation with LLMs
+  - BERT models trained on manual annotation 
+
+
+## Research Questions {background-color="black"}
+
+<div style="margin-bottom: 50px;"></div>
+
+*Q1 : How does the annotation produced by various LLMs and dictionaries compare to expert manual annotation?*
+
+<div style="margin-bottom: 20px;"></div>
+
+*Q2 : Is it possible to build a fully automated text annotation process that trains a BERT model using a previously validated automatic annotation method?*
+
+# Data and Method {background-color="black"}
+
+
+## Data Collection and Sample
+<div style="margin-bottom: 50px;"></div>
+
+:::: {.columns .content-columns style="display: flex;"}
+
+::: {.column width="49%" style="border-right: 2px solid #ccc; padding-right: 1em;"}
+**Media Corpus**
+
+Headline content from 13 Canadian media outlets
+:::
+
+::: {.column width="49%" style="padding-left: 1em;"}
+**Parliamentary Corpus**
+
+Transcripts of debates from the House of Commons
+:::
+
+::::
+
+<div style="margin-top: 2em; text-align: center; font-style: italic;">
+40,000 sentences evenly split between both corpora and both languages
+</div>
+
+
+## Dimensions of Analysis
+
+1. Thematic
+
+  *Comparative Agendas project's* 21 issue categories
+
+2. Referential
+
+  Identification of Canadian and Quebec political parties
+
+3. Sentimental
+
+  Tone of sentences in the corpus
+
+## Annotation Procedure
+
+1. Annotation by **dictionaries**
+    - 21 issues dictionary (*Lexicoder*)
+    - In-house dictionary of political parties
+    - Sentiment dictionary (*Lexicoder*)
+
+## Annotation Procedure
+
+2. Annotation by **LLMs**
+
+  Unique prompt for all models that structures annotation output
+
+<div style="margin-bottom: 100px;"></div>
+
+<div style="border: 1px solid #444; border-radius: 8px; padding: 16px 20px; text-align: center; background-color: #222; color: #fff; max-width: 80%; margin: 0 auto; font-weight: 500;">
+  GPT4o | Deepseek R1 | Nemotron  
+  <br>
+  Mixtral 8x22B | Llama 3.3 | Qwen 2.5
+</div>
+
+## Annotation Procedure
+
+3. **Manual** annotation
+    - 5 coders procedure
+    - Annotation of the 3 analysis dimensions
+    - 20% common sentences for inter-coder validation
+
+## BERT Model Training
+
+- Metrics comparison from different annotation procedures
+- Fine-tuning the **BERT** model on training and test corpora
+
+<!--##
+<h2 style="text-align: center;">Pipeline Procedure</h2>
+
+![](graphs/pipeline.jpg){fig-align="center"} -->
+
+# Results {background-color="black"}
+
+<!-- ##
+<h2 style="text-align: center;">Aggregated Metrics</h2>
+
+<div style="margin-bottom: 50px;"></div>
+
+![](graphs/aggregates.png){fig-align="center"} -->
+
+
+##
+<h2 style="text-align: center;">Issues F1 Scores</h2>
+
+<div style="margin-bottom: 50px;"></div>
+
+![](graphs/F1_score.png){fig-align="center"}
+
+## 
+<h2 style="text-align: center;">Sentiment F1 Scores</h2>
+<div style="margin-bottom: 50px;"></div>
+
+![](graphs/F1_score_sentiment.png){fig-align="center"}
+
+## Preliminary Findings
+<div style="margin-bottom: 50px;"></div>
+
+- LLMs are able to annotate to an acceptable threshold to consider process automation.
+- Hints at the importance of testing different methods and models to find which is best suited for their project.
+
+#
+<h1 style="text-align: center;">Thank You!</h1>
+
+<div style="margin-top: 100px; text-align: center; font-size: 1.5em;">
+  Jérémy Gilbert  
+  <a href="mailto:jeremy.gilbert.1@ulaval.ca">jeremy.gilbert.1@ulaval.ca</a>
+</div>
