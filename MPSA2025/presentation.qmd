@@ -7,7 +7,7 @@ author:
 format:
   revealjs: 
     html: true
-    logo: _SharedFolder/images/logo.png
+    logo: images/logo.png
     theme: default
     css: custom.css
 ---
@@ -33,10 +33,10 @@ Analysis by manual coding
   - Dictionaries are widely used in political science
     - Matches words and expressions in a corpus
 
-##
+<!--##
 <h2 style="text-align: center;">Automated Methods of Analysis</h2>
 
-![](_SharedFolder/graphs/dict_use-case.png){fig-align="center"}
+![](graphs/dict_use-case.png){fig-align="center"} -->
 
 ## Automated Methods of Analysis
 
@@ -47,7 +47,7 @@ Analysis by manual coding
 
 ## LLMs Arrival 
 
-<!--- LLMs predict the probability of word sequences-->
+<!--- LLMs predict the probability of word sequences -->
 - Good at capturing context, can offer nuanced responses
 - Generative AI is capable of effective text annotation
 - New supervised learning methods of annotation with LLMs
@@ -158,19 +158,19 @@ Transcripts of debates from the House of Commons
 
 <div style="margin-bottom: 50px;"></div>
 
-![](_SharedFolder/graphs/F1_score.png){fig-align="center"}
+![](graphs/F1_score.png){fig-align="center"}
 
 ## 
 <h2 style="text-align: center;">Sentiment F1 Scores</h2>
 <div style="margin-bottom: 50px;"></div>
 
-![](_SharedFolder/graphs/F1_score_sentiment.png){fig-align="center"}
+![](graphs/F1_score_sentiment.png){fig-align="center"}
 
 ## Preliminary Findings
 <div style="margin-bottom: 50px;"></div>
 
 - LLMs are able to annotate to an acceptable threshold to consider process automation.
-- Hints at the importance of testing different methods and models to find which is best suited for their project.
+- Hints at the importance of testing different methods and models to find which is best suited for the project.
 
 #
 <h1 style="text-align: center;">Thank You!</h1>
@@ -179,3 +179,10 @@ Transcripts of debates from the House of Commons
   Jérémy Gilbert  
   <a href="mailto:jeremy.gilbert.1@ulaval.ca">jeremy.gilbert.1@ulaval.ca</a>
 </div>
+
+##
+<h2 style="text-align: center;">Aggregated Metrics</h2>
+
+<div style="margin-bottom: 50px;"></div>
+
+![](graphs/aggregates.png){fig-align="center"}
